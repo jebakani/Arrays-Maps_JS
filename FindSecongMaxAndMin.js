@@ -47,4 +47,12 @@ randomArray.forEach(GetSecondMin);
 console.log('Second maximum is :'+secondMax);
 console.log('Second minimum is :'+secondMin);
 
+//refactor the code
+//Arr2-Finding the min and max after sorting
+//sorting array in decending order
+randomArray.sort(function(a,b){return b-a});
+console.log('Second maximum is :'+randomArray[1]);
+//sorting the array in ascending order
+randomArray.sort(function(a,b){return a-b});
+console.log('Second minimum is :'+randomArray[1]);
 
