@@ -31,4 +31,9 @@ while(CheckCount(count))
         
     }
 }
+let valueArray=Array.from(diceMap.values());
+let keyArray=Array.from(diceMap.keys());
+//printing the dice number that occure min and max num of time
+console.log('The number with max time :'+keyArray[valueArray.indexOf(Math.max(...valueArray))]);
+console.log('The number with min time :'+keyArray[valueArray.indexOf(Math.min(...valueArray))]);
 console.log(diceMap);
